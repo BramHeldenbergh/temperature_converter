@@ -29,16 +29,16 @@ def to_text
 end
 
 def to_json
-  %{{celsius:  #{celsius} , Fahrenheit:  #{fahrenheit}, Kelvin: #{kelvin} }
+  %{{celsius: #{celsius}, Fahrenheit: #{fahrenheit}, Kelvin: #{kelvin}}
   }
 end
 
 def to_html
-  %{"<div>"
-  "  <div>" #{celsius} " °C<div>"
-  "  <div>" #{fahrenheit} " °F<div>"
-  "  <div>" #{kelvin} " K<div>"
-  "<div>"
+  %{<div>
+    <div> #{celsius} °C<div>
+    <div> #{fahrenheit} °F<div>
+    <div> #{kelvin} K<div>
+  <div>
   }
 end
 
